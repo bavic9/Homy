@@ -10,3 +10,17 @@ body{
 button{
   color: hsl(214, 57%, 28%);
 }
+
+.logoImg img{
+  width: 10rem ;
+  padding: 1rem;
+  margin: auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .logoImg img{
+    width: 10rem ;
+    padding: 1rem;
+    margin: auto;
+  }
+}
