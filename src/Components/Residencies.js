@@ -55,7 +55,7 @@ const Residencies = () => {
 
   return (
     <section className='pb-10'>
-        <div className='py-10 relative'>
+        <div className='py-10'>
             <div className='mb-16 w-card mx-auto md:pl-10 text-center md:text-start capitalize'>
                 <span className=' text-4xl md:text-5xl text-orange'>best choices</span> <br/>
                 <span className='leading-snug font-bold text-4xl md:text-5xl text-blueIsh '>popular Residencies</span>
@@ -79,7 +79,8 @@ const Residencies = () => {
                     slidesPerView: 4,
                 },
             }}
-            className='h-full w-card'>
+            className=' w-card'>
+                <SliderButtons/>
                 {data.map((data, index) => {
                         return (
                             <SwiperSlide className=''>
@@ -98,21 +99,15 @@ export default Residencies
 
 
 
+const SliderButtons =() => {
+
+    const swiper = useSwiper();
 
 
-
-
-
-// const SliderButtons =() => {
-
-
-//     const swiper = useSwiper();
-
-
-//     return (
-//         <div className='text-6xl font-bold gap-4 bg-red '>
-//             <button onClick={() => swiper.slidePrev()}>&lt;</button>
-//             <button onClick={() => swiper.slideNext()}>&gt;</button>
-//         </div>
-//     )
-// }
+    return (
+        <div className='text-xl flex justify-center md:justify-end m-8 font-bold'>
+            <button className='rounded-small py-1 px-3 mr-4 shadow-md shadow-blueIsh/50' onClick={() => swiper.slidePrev()}>&lt;</button>
+            <button className='rounded-small py-1 px-3 shadow-md shadow-blueIsh/50' onClick={() => swiper.slideNext()}>&gt;</button>
+        </div>
+    )
+}

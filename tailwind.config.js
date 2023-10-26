@@ -56,7 +56,8 @@ module.exports = {
         orange: '4rem',
         '100%': '100%',
         card: '100%',
-        img: '180px' 
+        img: '180px',
+        vh: '80vh'
       }
     },
   },
