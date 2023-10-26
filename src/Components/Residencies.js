@@ -1,9 +1,10 @@
 import React from 'react'
-import {Swiper, SwiperSlide} from 'swiper/react'
+import {Swiper, SwiperSlide, useSwiper} from 'swiper/react'
 import { ResCard } from './ResCard'
 import r1 from '../img/r1.png'
 import r2 from '../img/r2.png'
 import r3 from '../img/r3.png'
+import 'swiper/css';
 
 
 const Residencies = () => {
@@ -53,17 +54,35 @@ const Residencies = () => {
     
 
   return (
-    <section className=''>
-        <div className='py-10 px-20'>
-            <div className='mb-16 capitalize'>
-                <span className=' text-5xl text-orange'>best choices</span> <br/>
-                <span className='leading-snug font-bold text-6xl text-blueIsh '>popular Residencies</span>
+    <section className='pb-10'>
+        <div className='py-10 relative'>
+            <div className='mb-16 w-card mx-auto md:pl-10 text-center md:text-start capitalize'>
+                <span className=' text-4xl md:text-5xl text-orange'>best choices</span> <br/>
+                <span className='leading-snug font-bold text-4xl md:text-5xl text-blueIsh '>popular Residencies</span>
             </div>
-
-            <Swiper>
+            
+            
+            <Swiper
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+            breakpoints={{
+                480: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                979: {
+                    slidesPerView: 4,
+                },
+                1440: {
+                    slidesPerView: 4,
+                },
+            }}
+            className='h-full w-card'>
                 {data.map((data, index) => {
                         return (
-                            <SwiperSlide key={index} {...data}>
+                            <SwiperSlide className=''>
                                 <ResCard key={index} {...data}/>
                             </SwiperSlide>
                         )
@@ -76,3 +95,24 @@ const Residencies = () => {
 }
 
 export default Residencies
+
+
+
+
+
+
+
+
+// const SliderButtons =() => {
+
+
+//     const swiper = useSwiper();
+
+
+//     return (
+//         <div className='text-6xl font-bold gap-4 bg-red '>
+//             <button onClick={() => swiper.slidePrev()}>&lt;</button>
+//             <button onClick={() => swiper.slideNext()}>&gt;</button>
+//         </div>
+//     )
+// }
