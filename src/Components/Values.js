@@ -41,7 +41,7 @@ const Values = () => {
 
 
   return (
-    <section>
+    <section className=''>
       <div className='container flex flex-col-reverse justify-between pt-10 md:flex-row items-center px-6 py-20 mx-auto space-y-0 md:space-y-0'>
         <div className='w-full mt-20 md:mt-0 rounded-topRightLeft h-full border-4 border-darkGrayishBlue'>
           <img className='w-100% h-100% rounded-topRightLeft' src={valueimg} alt=''/>
@@ -65,9 +65,9 @@ const Values = () => {
             {
               value.map ((data, index) => {
                 return (
-                    <AccordionItem className='bg-white border-darkGrayishBlue rounded-small overflow-hidden mt-4' key={index} uuid={index}>
+                    <AccordionItem className='border-none p-3 rounded-md overflow-hidden mt-5 shadow-md hover:shadow-md shadow-blueIsh/50' key={index} uuid={index}>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className=''>
                           <ValueData key={index} {...data}/>
                         </AccordionItemButton>
                       </AccordionItemHeading>

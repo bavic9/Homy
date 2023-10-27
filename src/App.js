@@ -5,6 +5,7 @@ import Hero from './Components/Hero';
 import Companies from './Components/Companies';
 import Residencies from './Components/Residencies';
 import Values from './Components/Values';
+import Contact from './Components/Contact';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Companies/>
         <Residencies/>
         <Values/>
+        <Contact/>
       </div>
   );
 }

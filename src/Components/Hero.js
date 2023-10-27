@@ -48,7 +48,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className='w-full rounded-topRightLeft h-full border-4 border-darkGrayishBlue'>
-                <img className='w-100% h-100% rounded-topRightLeft' src={heroImg}/>
+                <img className='w-100% h-100% rounded-topRightLeft' src={heroImg} alt='img'/>
             </div>
         </div>
     </section>

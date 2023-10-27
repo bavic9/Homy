@@ -15,7 +15,8 @@ module.exports = {
       topRightLeft: '15rem 15rem 0 0',
       small: '5px',
       card: '5%',
-      full: '100%'
+      full: '100%',
+      md: '10px'
     },
 
     extend: {
@@ -57,7 +58,7 @@ module.exports = {
         '100%': '100%',
         card: '100%',
         img: '180px',
-        vh: '80vh'
+        vh: '80vh',
       }
     },
   },
