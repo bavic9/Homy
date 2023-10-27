@@ -36,8 +36,8 @@ const Contact = () => {
 
   return (
     <section className='pb-32'>
-        <div className='container flex flex-col justify-between pt-10 md:flex-row items-center px-6 mx-auto space-y-20 md:space-y-0'>
-            <div className='flex text-white flex-col space-y-4 md:w-half'>   
+        <div className='container flex flex-col lg:justify-between pt-10 lg:flex-row items-center px-6 mx-auto space-y-20 lg:space-y-0'>
+            <div className='flex text-white flex-col space-y-4 md:w-100% lg:w-half'>   
                 <span className='text-orange text-2xl font-semibold capitalize'>our contact us</span>
                 <h2 className='text-blueIsh text-4xl font-bold'>Easy to contact us</h2>
                 <span className='text-darkGrayishBlue pb-5'>
@@ -47,7 +47,7 @@ const Contact = () => {
                 </span>
 
 
-                <div className='grid grid-rows-2 grid-flow-col gap-6'>
+                <div className='grid grid-rows-2 md:grid-flow-col gap-6'>
                     {
                         cards.map((card, i) =>{
                             return (

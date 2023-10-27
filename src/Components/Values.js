@@ -41,13 +41,13 @@ const Values = () => {
 
 
   return (
-    <section className=''>
-      <div className='container flex flex-col-reverse justify-between pt-10 md:flex-row items-center px-6 py-20 mx-auto space-y-0 md:space-y-0'>
-        <div className='w-full mt-20 md:mt-0 rounded-topRightLeft h-full border-4 border-darkGrayishBlue'>
+    <section className='pb-10'>
+      <div className='container flex flex-col-reverse justify-between pt-10 lg:flex-row items-center px-6 py-20 mx-auto space-y-0 md:space-y-0'>
+        <div className='w-full mt-20 lg:mt-0 rounded-topRightLeft h-full border-4 border-darkGrayishBlue'>
           <img className='w-100% h-100% rounded-topRightLeft' src={valueimg} alt=''/>
         </div>
 
-        <div className='md:w-half'>
+        <div className='lg:w-half'>
           <span className='text-orange text-2xl font-semibold capitalize'>our value</span>
           <h2 className='text-blueIsh text-4xl font-bold py-2 '>value we give to you</h2>
           <span className='text-darkGrayishBlue'>
@@ -65,7 +65,7 @@ const Values = () => {
             {
               value.map ((data, index) => {
                 return (
-                    <AccordionItem className='border-none p-3 rounded-md overflow-hidden mt-5 shadow-md hover:shadow-md shadow-blueIsh/50' key={index} uuid={index}>
+                    <AccordionItem className='border-none p-8 rounded-md overflow-hidden mt-5 shadow-md hover:shadow-md shadow-blueIsh/50' key={index} uuid={index}>
                       <AccordionItemHeading>
                         <AccordionItemButton className=''>
                           <ValueData key={index} {...data}/>

@@ -6,6 +6,8 @@ import Companies from './Components/Companies';
 import Residencies from './Components/Residencies';
 import Values from './Components/Values';
 import Contact from './Components/Contact';
+import Cta from './Components/Cta';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Residencies/>
         <Values/>
         <Contact/>
+        <Cta/>
+        <Footer/>
       </div>
   );
 }
