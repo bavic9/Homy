@@ -49,7 +49,10 @@ module.exports = {
         logo: '100px',
         card: '90vw',
         img: '95%',
-        '33': '255px'
+        '33': '255px',
+        imgMd: '90%',
+        vr: '25px',
+        btn: '75px'
       },
 
       height: {
@@ -59,6 +62,7 @@ module.exports = {
         card: '100%',
         img: '180px',
         vh: '80vh',
+        vr: '25px'
       }
     },
   },

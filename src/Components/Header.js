@@ -8,9 +8,9 @@ const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false)
 
   const getMenuStyles = (menuOpened)=>{
-    if (document.documentElement.clientWidth <= 800)
+    if (document.documentElement.clientWidth <= 500)
     {
-      return { right: !menuOpened && '-100%'}
+      return { left: !menuOpened && '100%'}
     }
   }
 

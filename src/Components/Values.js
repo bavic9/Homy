@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import {
     Accordion,
     AccordionItem,
@@ -21,19 +22,19 @@ const Values = () => {
         {
             icon: <HiShieldCheck/>,
             heading: "Best interest rates on the market",
-            dropDown: <MdOutlineArrowDropDown size={20}/>,
+            dropDown: <MdOutlineArrowDropDown size={25}/>,
             detail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur atque odit at, corporis quo dolor.",
         },
         {
             icon: <MdCancel/>,
             heading: "Prevent unstable prices",
-            dropDown: <MdOutlineArrowDropDown/>,
+            dropDown: <MdOutlineArrowDropDown  size={25}/>,
             detail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur atque odit at, corporis quo dolor.Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur atque odit at, corporis quo dolor.",
         },
         {
             icon: <MdAnalytics/>,
             heading: "Best price on the market",
-            dropDown: <MdOutlineArrowDropDown/>,
+            dropDown: <MdOutlineArrowDropDown  size={25}/>,
             detail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur atque odit at, corporis quo dolor.",
         },
     ]
@@ -43,9 +44,13 @@ const Values = () => {
   return (
     <section className='pb-10'>
       <div className='container flex flex-col-reverse justify-between pt-10 lg:flex-row items-center px-6 py-20 mx-auto space-y-0 md:space-y-0'>
-        <div className='w-full mt-20 lg:mt-0 rounded-topRightLeft h-full border-4 border-darkGrayishBlue'>
+        <motion.div 
+          initial={{x: '-7rem', opacity: 0}}
+          animate={{x: 0, opacity: 1}}
+          transition={{duration: 5, type: 'spring'}}
+         className='w-imgMd md:w-full mt-20 lg:mt-0 rounded-topRightLeft h-full border-4 border-darkGrayishBlue'>
           <img className='w-100% h-100% rounded-topRightLeft' src={valueimg} alt=''/>
-        </div>
+        </motion.div>
 
         <div className='lg:w-half'>
           <span className='text-orange text-2xl font-semibold capitalize'>our value</span>
@@ -67,7 +72,7 @@ const Values = () => {
                 return (
                     <AccordionItem className='border-none p-8 rounded-md overflow-hidden mt-5 shadow-md hover:shadow-md shadow-blueIsh/50' key={index} uuid={index}>
                       <AccordionItemHeading>
-                        <AccordionItemButton className=''>
+                        <AccordionItemButton className='border-none'>
                           <ValueData key={index} {...data}/>
                         </AccordionItemButton>
                       </AccordionItemHeading>

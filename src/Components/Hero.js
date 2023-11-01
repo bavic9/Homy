@@ -23,7 +23,7 @@ const Hero = () => {
                 <div className=' flex justify-between w-vw mx-auto lg:mx-0  md:w-search bg-white rounded-small border-3 border-darkBlue py-[8px] px-[16px]'>
                     <HiLocationMarker color='hsl(214, 57%, 28%)' size={25}/>
                     <input className='border-none outline-none text-dark' type='text'/>
-                    <button className='bg-blueIsh text-white rounded-small px-4'>search</button>
+                    <button className='bg-blueIsh text-white rounded-small w-btn'>search</button>
                 </div>
 
                 <div className='flex justify-between w-vw md:px-32 lg:px-0 md:mx-auto lg:mx-0 lg:w-stat'>
@@ -57,7 +57,7 @@ const Hero = () => {
             initial={{x: '7rem', opacity: 0}}
             animate={{x: 0, opacity: 1}}
             transition={{duration: 5, type: 'spring'}}
-            className='w-full rounded-topRightLeft h-full border-4 border-darkGrayishBlue'>
+            className='w-img md:w-full rounded-topRightLeft h-full border-4 border-darkGrayishBlue'>
                 <img className='w-100% h-100% rounded-topRightLeft' src={heroImg} alt='img'/>
             </motion.div>
         </div>

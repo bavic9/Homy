@@ -59,7 +59,7 @@ const Contact = () => {
 
             </div>
 
-            <div className='w-full rounded-topRightLeft h-full'>
+            <div className='w-img md:w-full rounded-topRightLeft h-full'>
                 <img className='w-100% h-100% rounded-topRightLeft' src={contactImg} alt='img'/>
             </div>
         </div>
