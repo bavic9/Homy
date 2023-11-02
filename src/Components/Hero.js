@@ -57,7 +57,7 @@ const Hero = () => {
             initial={{x: '7rem', opacity: 0}}
             animate={{x: 0, opacity: 1}}
             transition={{duration: 5, type: 'spring'}}
-            className='w-img md:w-full rounded-topRightLeft h-full border-4 border-darkGrayishBlue'>
+            className='w-img md:w-full rounded-topRightLeft h-hr border-4 border-darkGrayishBlue'>
                 <img className='w-100% h-100% rounded-topRightLeft' src={heroImg} alt='img'/>
             </motion.div>
         </div>

@@ -20,19 +20,19 @@ const Values = () => {
 
     const value = [
         {
-            icon: <HiShieldCheck/>,
+            icon: <HiShieldCheck size={20}/>,
             heading: "Best interest rates on the market",
             dropDown: <MdOutlineArrowDropDown size={25}/>,
             detail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur atque odit at, corporis quo dolor.",
         },
         {
-            icon: <MdCancel/>,
+            icon: <MdCancel size={20}/>,
             heading: "Prevent unstable prices",
             dropDown: <MdOutlineArrowDropDown  size={25}/>,
             detail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur atque odit at, corporis quo dolor.Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur atque odit at, corporis quo dolor.",
         },
         {
-            icon: <MdAnalytics/>,
+            icon: <MdAnalytics size={20}/>,
             heading: "Best price on the market",
             dropDown: <MdOutlineArrowDropDown  size={25}/>,
             detail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur atque odit at, corporis quo dolor.",
@@ -48,7 +48,7 @@ const Values = () => {
           initial={{x: '-7rem', opacity: 0}}
           animate={{x: 0, opacity: 1}}
           transition={{duration: 5, type: 'spring'}}
-         className='w-imgMd md:w-full mt-20 lg:mt-0 rounded-topRightLeft h-full border-4 border-darkGrayishBlue'>
+         className='w-imgMd md:w-full mt-20 lg:mt-0 rounded-topRightLeft h-hr border-4 border-darkGrayishBlue'>
           <img className='w-100% h-100% rounded-topRightLeft' src={valueimg} alt=''/>
         </motion.div>
 

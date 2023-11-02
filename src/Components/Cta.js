@@ -8,7 +8,7 @@ const Cta = () => {
           <p className='text-lg text-darkGrayishBlue px-8'>Subscribe and find supper attractive price quotes from us</p>
           <p className='text-lg text-darkGrayishBlue'>Find your residence soon</p>
           <button className='my-12'>
-              <a href='#' className='py-4 px-8 text-white border rounded-md text-xl hover:bg-blueIshLight hover:text-blueIsh transition ease-in-out delay-70'>Get Started</a>
+              <a href='#' className='py-4 px-8 text-white border-2 rounded-md text-xl hover:bg-blueIshLight hover:text-blueIsh transition ease-in-out delay-70'>Get Started</a>
           </button>
       </div>
     </section>

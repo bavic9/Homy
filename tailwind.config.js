@@ -51,7 +51,7 @@ module.exports = {
         img: '95%',
         '33': '255px',
         imgMd: '90%',
-        vr: '25px',
+        vr: '35px',
         btn: '75px'
       },
 
@@ -62,7 +62,7 @@ module.exports = {
         card: '100%',
         img: '180px',
         vh: '80vh',
-        vr: '25px'
+        hr: '380px'
       }
     },
   },
