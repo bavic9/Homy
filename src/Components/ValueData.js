@@ -1,9 +1,9 @@
 export const ValueData = ({ icon, dropDown, heading}) => {
     return (
-        <div className="bg-white container flex justify-between text-blueIsh font-bold">
-            <span className="bg-blueIshLight p-2 rounded-small">{icon}</span>
+        <div className="bg-white container flex justify-between items-center text-blueIsh font-bold">
+            <span className="rounded-small">{icon}</span>
             <span className="text-base text-center text-xl p-1">{heading}</span>
-            <span className="bg-blueIshLight p-1 rounded-small">{dropDown}</span>    
+            <span className="rounded-small">{dropDown}</span>    
         </div>
     )
 }

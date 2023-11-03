@@ -23,32 +23,32 @@ const Hero = () => {
                 <div className=' flex justify-between w-vw mx-auto lg:mx-0  md:w-search bg-white rounded-small border-3 border-darkBlue py-[8px] px-[16px]'>
                     <HiLocationMarker color='hsl(214, 57%, 28%)' size={25}/>
                     <input className='border-none outline-none text-dark' type='text'/>
-                    <button className='bg-blueIsh text-white rounded-small w-btn'>search</button>
+                    <button className='bg-blueIsh text-white text-sm rounded-small w-btn'>search</button>
                 </div>
 
                 <div className='flex justify-between w-vw md:px-32 lg:px-0 md:mx-auto lg:mx-0 lg:w-stat'>
-                    <div className='flex flex-col '>
+                    <div className='flex flex-col items-center'>
                         <span className='text-center text-3xl '>
                             <CountUp start={8800} end={9000} duration={4}/>
                             <span className='text-orange pl-2 font-bold'>+</span>
                         </span>
-                        <span className='capitalize pt-1'>premium product</span>
+                        <span className='capitalize pt-1 text-center'>premium product</span>
                     </div>
                     
-                    <div className='flex flex-col '>
+                    <div className='flex flex-col items-center'>
                         <span className='text-center text-3xl '>
                             <CountUp start={1500} end={2000} duration={4}/>
                             <span className='text-orange pl-2 font-bold'>+</span>
                         </span>
-                        <span className='capitalize pt-1'>happy customer</span>
+                        <span className='capitalize pt-1 text-center'>happy customer</span>
                     </div>
                     
-                    <div className='flex flex-col '>
+                    <div className='flex flex-col items-center'>
                         <span className='text-center text-3xl '>
                             <CountUp start={0} end={28}/>
                             <span className='text-orange pl-2 font-bold'>+</span>
                         </span>
-                        <span className='capitalize pt-1'>awards winning</span>
+                        <span className='capitalize pt-1 text-center'>awards winning</span>
                     </div>
                 </div>
             </div>
